@@ -1,0 +1,15 @@
+C:\Users\artem\source\repos\Training\Training\bin\Debug\net7.0\Training.exe
+C:\Users\artem\source\repos\Training\Training\bin\Debug\net7.0\Training.deps.json
+C:\Users\artem\source\repos\Training\Training\bin\Debug\net7.0\Training.runtimeconfig.json
+C:\Users\artem\source\repos\Training\Training\bin\Debug\net7.0\Training.dll
+C:\Users\artem\source\repos\Training\Training\bin\Debug\net7.0\Training.pdb
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.csproj.AssemblyReference.cache
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.AssemblyInfoInputs.cache
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.AssemblyInfo.cs
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.csproj.CoreCompileInputs.cache
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.dll
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\refint\Training.dll
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.pdb
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\Training.genruntimeconfig.cache
+C:\Users\artem\source\repos\Training\Training\obj\Debug\net7.0\ref\Training.dll
