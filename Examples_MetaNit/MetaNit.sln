@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3D_Matrice", "3D_Matrice\3D_Matrice.csproj", "{63C3AD1F-461C-4B75-AB2F-3951AB8106CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort_Massive", "Sort_Massive\Sort_Massive.csproj", "{5C7CBA82-620A-44A4-9E24-43EC00AA1C60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C3AD1F-461C-4B75-AB2F-3951AB8106CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C3AD1F-461C-4B75-AB2F-3951AB8106CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C3AD1F-461C-4B75-AB2F-3951AB8106CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C3AD1F-461C-4B75-AB2F-3951AB8106CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7CBA82-620A-44A4-9E24-43EC00AA1C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7CBA82-620A-44A4-9E24-43EC00AA1C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7CBA82-620A-44A4-9E24-43EC00AA1C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7CBA82-620A-44A4-9E24-43EC00AA1C60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DDAAC8B-C2B7-4226-9184-B8C0092167C0}
+	EndGlobalSection
+EndGlobal
