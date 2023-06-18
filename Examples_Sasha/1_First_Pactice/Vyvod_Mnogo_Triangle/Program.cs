@@ -21,8 +21,47 @@ do
 
 } while (N2 <= 0 || !check);
 
-Console.WriteLine("Значение принято\n");
-int[] Number_Of_Strings_Massive = new int[N2];
+string triangle_1 = new String(' ', 2 * N2 - 1);
+string zvezdy_1 = "*";
+
+for (int i = 0; i < N2; i++)
+{
+    triangle_1 = triangle_1.Insert(N2 - 1 - i, zvezdy_1);
+    triangle_1 = triangle_1.Remove(N2 + 1 - i, i);
+    zvezdy_1 += "*";
+    Console.WriteLine(triangle_1);
+}
+
+
+
+
+/*  ПЕРВЫЙ СПОСОБ
+ * 
+ * Console.WriteLine("Значение принято\n");
+
+string triangle_1 = new String(' ', 2 * N2 - 1);
+string zvezdy_1 = "*";
+
+for (int i = 0; i < N2; i++)
+{
+    zvezdy_1 = "*";
+    triangle_1 = new String(' ', 2 * N2 - 1);
+
+    for (int j = 0; j <= i; j++ )
+    {
+        
+        triangle_1 = triangle_1.Insert(N2 - 1 - j, zvezdy_1);
+        triangle_1 = triangle_1.Remove(N2 + 1 - j, j);
+        zvezdy_1 += "*";
+        Console.WriteLine(triangle_1);
+    }
+      
+}*/
+
+
+/*  ВТОРОЙ СПОСОБ
+ * 
+ * int[] Number_Of_Strings_Massive = new int[N2];
 
 for (int l = 0; l < N2; l++)
 {
@@ -33,7 +72,7 @@ for (int l = 0; l < N2; l++)
 
 Console.WriteLine($"Количество строк в общем массиве = {Sum_Of_Strings}");
 
-string[,] massive_2 = new string[Sum_Of_Strings, 2 * N2 - 1];
+string[,,] massive_2 = new string[Sum_Of_Strings, 2 * N2 - 1, 2 * N2 - 1];
 
 Console.WriteLine();
 
@@ -70,9 +109,9 @@ for (int i = 2; i <= N2; i++)
     Triangle(i, N2);
 }
 
-// Вместо метода можно через трехмерный массив сделать еще. Чистый код есть в "Для тестовых штук". Нижний проект.
+// ТРЕТИЙ СПОСОБ    Вместо метода можно через трехмерный массив сделать еще.
 
-/*for (int i = 0; i < N2; i++)
+for (int i = 0; i < N2; i++)
 {
 
     for (int j = 0; j <= i; j++)

@@ -1,20 +1,23 @@
-﻿//Сортировка массива одномерного
+﻿int[] nums = { 54, 7, -41, 2, 4, 2, 89, 33, -5, 12 };
 
-Console.WriteLine("Начало программы сортировки массива");
-int[] nums = new int[] { -55, 10, -85, 65, 1, 25, -4, 8, 100, 0 };
-int buffer;
-
+// сортировка
+int temp;
 for (int i = 0; i < nums.Length - 1; i++)
 {
     for (int j = i + 1; j < nums.Length; j++)
-
+    {
         if (nums[i] > nums[j])
         {
-            buffer = nums[i];
+            temp = nums[i];
             nums[i] = nums[j];
-            nums[j] = buffer;
+            nums[j] = temp;
         }
+    }
 }
+
+// вывод
+Console.WriteLine("Вывод отсортированного массива");
 for (int i = 0; i < nums.Length; i++)
-    Console.Write($"{nums[i]}   ");
-Console.WriteLine("\nКонец программы сортировки массива\n");
+{
+    Console.WriteLine(nums[i]);
+}

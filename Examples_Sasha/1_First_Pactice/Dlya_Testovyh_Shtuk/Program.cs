@@ -1,67 +1,38 @@
-﻿// Начало вывода многих треугольников с отсечкой
+﻿int Sum = 0;
+int[] Massive_All = new int[1001];
+int q = 0;
+int[] Massive_Usloviya = new int[1001];
 
-Console.WriteLine("\nНачало вывода многих треугольников с отсечкой\n");
-Console.Write("Пожалуйста, введите количество строк \nУчитывайте, что введенное значение должно быть целым положительным числом\nN=");
-
-int Sum_Of_Strings = 0;
-int p = 1;
-int N2;
-bool check;
-
-do
+for (int i = 0; i < Massive_All.Length; i++)
 {
-    string? Console_Input = Console.ReadLine();
-    check = int.TryParse(Console_Input, out N2);
+    Massive_All[i] = i;
 
-    if (!check || N2 <= 0)
+    // Если нужно вывести весь массив от 1 до 1000
+
+    //Console.WriteLine(massa[i]);
+
+    double check_3 = Math.IEEERemainder(Massive_All[i], 3);
+    double check_5 = Math.IEEERemainder(Massive_All[i], 5);
+
+    if (Massive_All[i] < 1000 && (check_3 == 0 || check_5 == 0))
     {
-        Console.Write("Недопустимое значение.\nУбедитесь, что введенное значение является целым положительным числом\nN=");
+        Sum += Massive_All[i];
+        Massive_Usloviya[q] = Massive_All[i];
+        q += 1;
     }
 
-} while (N2 <= 0 || !check);
-
-Console.WriteLine("Значение принято\n");
-int[] Number_Of_Strings_Massive = new int[N2];
-
-for (int l = 0; l < N2; l++)
-{
-    Number_Of_Strings_Massive[l] = p;
-    Sum_Of_Strings += Number_Of_Strings_Massive[l];
-    p += 1;
 }
 
-Console.WriteLine($"Количество строк в общем массиве = {Sum_Of_Strings}");
+Console.WriteLine("\nВывод массива с числами, удовлетворяющим условиям\n");
 
-string[,,] massive_2 = new string[N2, Sum_Of_Strings, 2 * N2 - 1];
+int Sum_Check = 0;
 
-Console.WriteLine();
-
-for (int i = 0; i < N2; i++)
+for (int j = 0; j < q; j++)
 {
-
-    for (int j = 0; j <= i; j++)
-    {
-
-        for (int k = 0; k < 2 * N2 - 1; k++)
-        {
-
-            if (k >= N2 - 1 - j && k <= N2 - 1 + j)
-            {
-                massive_2[i, j, k] = "*";
-            }
-
-            else
-            {
-                massive_2[i, j, k] = " ";
-            }
-
-            Console.Write(massive_2[i, j, k]);
-        }
-
-        Console.WriteLine();
-    }
-
-   
+    Console.WriteLine(Massive_Usloviya[j]);
+    Sum_Check += Massive_Usloviya[j];
 }
 
-Console.WriteLine("\nКонец вывода многих треугольников с отсечкой\n");
+Console.WriteLine($"Найдено k={q} значений, которые удовлетворяют условиям");
+Console.WriteLine($"Сумма значений, которые удовлетворяют условиям равна {Sum}");
+Console.WriteLine($"Проверка на сумму {Sum_Check}");

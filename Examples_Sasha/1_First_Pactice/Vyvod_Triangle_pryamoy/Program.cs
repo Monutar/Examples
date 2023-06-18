@@ -20,7 +20,19 @@ do
 
 Console.WriteLine("Значение принято\n");
 
-string[,] massive = new string[N, N];
+string zvezdy = "*";
+string triangle = "";
+
+for (int i = 0; i < N; i++)
+{
+    triangle += zvezdy;
+    Console.WriteLine(triangle);
+
+}
+
+Console.WriteLine("\nКонец вывода треугольника со звездами\n");
+
+/*string[,] massive = new string[N, N];
 
 for (int i = 0; i < N; i++)
 {
@@ -38,4 +50,4 @@ for (int i = 0; i < N; i++)
     Console.WriteLine();
 }
 
-Console.WriteLine("\nКонец вывода треугольника со звездами\n");
+*/
